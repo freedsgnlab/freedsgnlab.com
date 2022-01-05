@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(50, 50, 50);
+    font-family: 'Nunito', sans-serif;
+}
+
+.navigation-container{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(255, 251, 36);
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-title{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(26, 26, 26);
+    width: 20%;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.navigation-search{
+    width: 60%;
+    height: 80%;
+    align-items: center;
+    background-color: rgb(50, 50, 50);
+    border: none;
+    border-radius: 5px;
+    margin: auto;
+    color: rgb(7, 168, 242);
+    font-size: 1.5em;
+    font-style: italic;
+    padding-left: 1%;
+}
+
+.navigation-search:focus{
+    outline: 0;
+}
+
+.navigation-social{
+    width: 20%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation-signin{
+    width: 50%;
+    margin-top: 2%;
+    text-align: right;
+    align-items: center;
+    font-size: 1.5em;
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+}
+
+.navigation-profile{
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 10%;
+}
+
+.quad-container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-evenly;
+}
+
+.quad-entry{
+    width: 22%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: rgb(26, 26, 26);
+    border: 5px solid rgb(26, 26, 26);
+    border-radius: 10px;
+}
+
+.project-image{
+    height: 50%;
+    width: auto;
+    border-radius: 10px;
+}
+
+.project-name{
+    color: rgb(255, 251, 36);
+    margin: 0px;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.project-text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-description{
+    color: white;
+    width: 90%;
+    text-align: justify;
+    margin-left: 5%;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.project-read-more{
+    color: rgb(255, 251, 36);
+    margin-right: 5%;
+    align-self: flex-end;
+    font-style: italic;
+}
+
+.project-read-more:hover{
+    color: rgb(7, 168, 242);
+}
+
+.project-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.project-default-button{
+    margin-top: 5%;
+    width: 30%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(255, 251, 36);
+    color: rgb(26, 26, 26);
+    font-size: 1.2em;
+}
+
+.project-like{
+    
+}
+
+.project-chat{
+    
+}
+
+.project-more{
+    
+}
+
+.project-default-button:hover{
+    background-color: rgb(7, 168, 242);
+    cursor: pointer;
+    color: white;
+}
