@@ -16,7 +16,6 @@ body{
 }
 
 .navigation-title{
-    font-family: 'Nunito', sans-serif;
     color: rgb(26, 26, 26);
     width: 20%;
     margin: 0;
@@ -66,58 +65,75 @@ body{
     padding-left: 10%;
 }
 
-.quad-container{
+.quad-project-container{
     width: 100%;
-    height: 600px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     margin-top: 5%;
-    justify-content: space-evenly;
+    gap: 1%;
 }
 
-.quad-entry{
-    width: 22%;
-    height: 100%;
+.project-container{
+    flex-basis: 22%;
+    background-color: rgb(26, 26, 26);
+    height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    max-width: 22%;
     overflow: hidden;
-    background-color: rgb(26, 26, 26);
     border: 5px solid rgb(26, 26, 26);
     border-radius: 10px;
 }
 
-.project-image{
+.project-image-container{
+    width: 100%;
     height: 50%;
-    width: auto;
+    background-color: rgb(26, 26, 26);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
     border-radius: 10px;
+}
+
+.project-image{
+    height: 100%;
+    width: 100%;
+}
+
+.project-image:hover{
+    cursor: pointer;
+}
+
+.project-description-container{
+    display: flex;
+    flex-direction: column;
 }
 
 .project-name{
     color: rgb(255, 251, 36);
     margin: 0px;
-    text-align: left;
     margin-left: 5%;
-}
-
-.project-text-container{
-    display: flex;
-    flex-direction: column;
 }
 
 .project-description{
     color: white;
-    width: 90%;
     text-align: justify;
+    font-size: 1em;
+    margin-top: 2%;
     margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 0px;
-    padding-bottom: 0px;
 }
 
 .project-read-more{
+    text-align: right;
     color: rgb(255, 251, 36);
+    font-size: 1em;
+    text-decoration: underline;
     margin-right: 5%;
-    align-self: flex-end;
     font-style: italic;
 }
 
@@ -125,37 +141,37 @@ body{
     color: rgb(7, 168, 242);
 }
 
-.project-socials{
+.project-button-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+    justify-content: space-evenly;
+}
+
+.project-button{
+    background-color: rgb(255, 251, 36);
+    color:rgb(26, 26, 26);
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 30%;
+    font-size: 1em;
+}
+
+.project-button:hover{
+    background-color: rgb(7, 168, 242);
+    color: white;
+    cursor: pointer;
+}
+
+.project-insight-container{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.project-default-button{
-    margin-top: 5%;
+.project-insight{
     width: 30%;
-    height: 35px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(255, 251, 36);
-    color: rgb(26, 26, 26);
-    font-size: 1.2em;
-}
-
-.project-like{
-    
-}
-
-.project-chat{
-    
-}
-
-.project-more{
-    
-}
-
-.project-default-button:hover{
-    background-color: rgb(7, 168, 242);
-    cursor: pointer;
     color: white;
+    text-align: center;
 }
