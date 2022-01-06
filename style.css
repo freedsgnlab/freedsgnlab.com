@@ -71,7 +71,6 @@ body{
     flex-direction: row;
     justify-content: center;
     margin-top: 5%;
-    gap: 1%;
 }
 
 .project-container{
@@ -84,6 +83,8 @@ body{
     overflow: hidden;
     border: 5px solid rgb(26, 26, 26);
     border-radius: 10px;
+    margin-left: .5%;
+    margin-right: .5%;
 }
 
 .project-image-container{
